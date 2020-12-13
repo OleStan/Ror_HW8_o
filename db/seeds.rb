@@ -9,7 +9,7 @@
   Author.create!(
       first_name: Faker::Name.first_name,
       last_name: Faker::Name.last_name,
-      birthday: Faker::Date.between(from: '1945-09-23', to: '20002-09-25'),
+      birthday: Faker::Date.between(from: '1945-09-23', to: '2002-09-25'),
       gender: Faker::Gender.binary_type
   )
 end
