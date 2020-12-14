@@ -15,10 +15,10 @@
   <%= @post.content %>
 </p>
 
-<p>
+<div class="container-lg" style="margin-bottom: 1%">
   <strong>Image:</strong>
-  <%= @post.image %>
-</p>
+  <img class=".img_show" src="<%= @post.image %>" class="img-fluid" style=" width: 80%; max-height: 80%;">
+</div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-info', role: "button", style: "color: white" %> |
+<%= link_to 'Back', posts_path, class: 'btn btn-secondary', role: "button", style: "color: white" %>

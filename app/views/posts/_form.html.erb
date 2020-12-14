@@ -1,4 +1,3 @@
-<div class="container">
 <%= form_with(model: post) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -12,24 +11,25 @@
     </div>
   <% end %>
 
-  <div class="form-group">
+  <div class="form-group" style="margin-bottom: 3%">
         <%= form.label :name%>
-        <select name="post[name]" id="post_name" class="form-control"><option value="Wilford Nader">Wilford Nader</option>
-          <option value="<%=Author.first.first_name + " " + Author.first.last_name %>>"><%=Author.first.first_name + " " + Author.first.last_name %></option>
-          <option value="<%=Author.second.first_name + " " + Author.second.last_name %>>"><%=Author.second.first_name + " " + Author.second.last_name %></option>
-          <option value="<%=Author.third.first_name + " " + Author.third.last_name %>>"><%=Author.third.first_name + " " + Author.third.last_name %></option>
-          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option></select>
-    <%= #form.select(:name,  options_for_select([[Author.first.first_name + " " + Author.first.last_name],
-                                                          #[Author.second.first_name + " " + Author.second.last_name],
-                                                          #[Author.third.first_name + " " + Author.third.last_name],
-                                                          #[Author.fourth.first_name + " " + Author.fourth.last_name],
-                                                          #[Author.fifth.first_name + " " + Author.fifth.last_name],]),
-        #class: "form-control")%>
+        <select name="post[name]" id="post_name" class="form-control">
+          <option value="Wilford Nader">Wilford Nader</option>
+          <option value="<%=Author.first.first_name + " " + Author.first.last_name %>"><%=Author.first.first_name + " " + Author.first.last_name %></option>
+          <option value="<%=Author.second.first_name + " " + Author.second.last_name %>"><%=Author.second.first_name + " " + Author.second.last_name %></option>
+          <option value="<%=Author.third.first_name + " " + Author.third.last_name %>"><%=Author.third.first_name + " " + Author.third.last_name %></option>
+          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option>
+          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option>
+          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option></select>
   </div>
 
-  <div class="field">
+
+
+
+
+    <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, class: "form-control",placeholder: 'max symbol 23',  maxlength: "23" %>
+    <%= form.text_field :title, class: "form-control"%>
   </div>
 
   <div class="field">
@@ -43,8 +43,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit( {:class => "btn btn-success"})%>
+    <%= form.submit( {:class => "btn btn-success",id: "button", onsubmit: "alert('submit!');return false"})%>
   </div>
 
 <% end %>
-</div>
