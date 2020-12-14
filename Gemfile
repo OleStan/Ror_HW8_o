@@ -62,4 +62,4 @@ gem "rails_12factor", group: :production
 #
 
 # Версию Ruby следует указывать в конце файла
-ruby "2.1.2"
+ruby "2.7.2"
