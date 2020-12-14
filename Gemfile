@@ -53,3 +53,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'faker'
+
+
+gem "rails_12factor", group: :production
+
+#
+# Другие ваши gem-ы
+#
+
+# Версию Ruby следует указывать в конце файла
+ruby "2.1.2"
