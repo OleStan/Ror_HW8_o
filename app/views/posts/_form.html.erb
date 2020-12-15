@@ -14,13 +14,13 @@
   <div class="form-group" style="margin-bottom: 3%">
         <%= form.label :name%>
         <select name="post[name]" id="post_name" class="form-control">
-          <option value="Wilford Nader">Wilford Nader</option>
+          
           <option value="<%=Author.first.first_name + " " + Author.first.last_name %>"><%=Author.first.first_name + " " + Author.first.last_name %></option>
           <option value="<%=Author.second.first_name + " " + Author.second.last_name %>"><%=Author.second.first_name + " " + Author.second.last_name %></option>
           <option value="<%=Author.third.first_name + " " + Author.third.last_name %>"><%=Author.third.first_name + " " + Author.third.last_name %></option>
           <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option>
-          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option>
-          <option value="<%=Author.fourth.first_name + " " + Author.fourth.last_name %>"><%=Author.fourth.first_name + " " + Author.fourth.last_name %></option></select>
+          <option value="<%=Author.fifth.first_name + " " + Author.fifth.last_name %>"><%=Author.fifth.first_name + " " + Author.fifth.last_name %></option>
+       </select>
   </div>
 
 
